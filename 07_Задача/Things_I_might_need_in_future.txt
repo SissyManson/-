@@ -1,0 +1,84 @@
+﻿
+
+
+string name1 = name.Split(' ').First();
+string FirstFragment = name1;
+Console.WriteLine("22: ");
+string tail = test.Substring(test.LastIndexOf('-') + 1);
+
+
+
+            Console.WriteLine("a) Числата с четни поредни номера:");
+            Console.ForegroundColor = ConsoleColor.Blue;
+            for (int i = 1; i <= 100; i++)
+            {
+                int x = rand.Next(0, 132);
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine("N:" + i + "  x=" + x);
+                }
+            }
+            Console.ResetColor();
+
+
+            Console.WriteLine("\n\nб) Числата с нечетни поредни номера и които са нечетни:");
+            Console.ForegroundColor = ConsoleColor.Green;
+            for (int j = 1; j <= 100; j++)
+            {
+                int y = rand.Next(0, 132);
+                if (j % 2 != 0 && y % 2 != 0)
+                {
+                    Console.WriteLine("N:" + j + "  x=" + y);
+                }
+            }
+            Console.ResetColor();
+
+
+            Console.WriteLine("\n\nв) Числата, които се делят на 3 без остатък:");
+            Console.ForegroundColor = ConsoleColor.Red;
+            for (int m = 1; m <= 100; m++)
+            {
+                int k = rand.Next(0, 132);
+                if (k % 3 == 0)
+                {
+                    Console.WriteLine("N:" + m + "  x=" + k);
+                }
+            }
+            Console.ResetColor();
+
+			 Console.WriteLine("\n\nд) Числата, чийто пореден номер се дели на 3 без остатък:");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            for (int t = 1; t <= 100; t++)
+            {
+                int g = rand.Next(0, 132);
+                if (t % 3 == 0)
+                {
+                    Console.WriteLine("N:" + t + "  x=" + g);
+                }
+            }
+            Console.ResetColor();
+
+
+            Console.WriteLine("\n\nе) Числата, които принадлежат на интервала (26;100]:");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            for (int s = 1; s <= 100; s++)
+            {
+                int v = rand.Next(0, 132);
+                if (v > 26 && v <= 100)
+                {
+                    Console.WriteLine("N:" + s + "  x=" + v);
+                }
+            }
+            Console.ResetColor();
+
+            Console.WriteLine("\n\nж) Числата, които НЕ принадлежат на интервала (26;100]:");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            for (int z = 1; z <= 100; z++)
+            {
+                int o = rand.Next(0, 132);
+                if (o <= 26 || o > 100)
+                {
+                    Console.WriteLine("N:" + z + "  x=" + o);
+                }
+            }
+            Console.ResetColor();
